@@ -13,12 +13,12 @@
         tools:context=".MainActivity" />
 
     <Button
-        android:id="@+id/button1"
+        android:id="@+id/show_poem_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_above="@+id/textView1"
         android:layout_alignLeft="@+id/textView1"
         android:layout_marginBottom="46dp"
-        android:text="@string/show_poem_button" />
+        android:text="@string/show_poem_button_text" />
 
 </RelativeLayout>
