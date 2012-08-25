@@ -9,11 +9,12 @@ import android.view.View.OnClickListener;
 import android.widget.Button;
 
 public class MainActivity extends Activity {
-
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        setTitle(this.getString(R.string.main_activity_title));
+        
         
         Button showPoemButton = (Button) findViewById(R.id.show_poem_button);
         final Intent intent = new Intent(MainActivity.this, PoemActivity.class);

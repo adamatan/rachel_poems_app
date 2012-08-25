@@ -6,6 +6,9 @@
     <string name="title_activity_main">MainActivity</string>
     <string name="show_poem_button_text">הצג שיר</string>
     
+    <!-- Activity titles -->
+    <string name="main_activity_title">שירי רחל</string>
+    
     <string name="poem_filename_key">poem_filename_key</string>
 
 </resources>
