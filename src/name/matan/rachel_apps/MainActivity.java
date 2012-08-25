@@ -16,9 +16,14 @@ public class MainActivity extends Activity {
         setContentView(R.layout.activity_main);
         
         Button showPoemButton = (Button) findViewById(R.id.show_poem_button);
+        final Intent intent = new Intent(MainActivity.this, PoemActivity.class);
+        final Bundle bundle = new Bundle();
+        
+        bundle.putString(this.getString(R.string.poem_filename_key) , "Rac016.html");
+        intent.putExtras(bundle);
         showPoemButton.setOnClickListener(new OnClickListener() {
 			public void onClick(View v) {
-				startActivity(new Intent(MainActivity.this, PoemActivity.class));
+				startActivity(intent);
 			}
 		});
     }

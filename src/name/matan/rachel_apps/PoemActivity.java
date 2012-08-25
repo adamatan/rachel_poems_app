@@ -11,7 +11,9 @@ public class PoemActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.poem_activity);
         WebView wv = (WebView) findViewById(R.id.poemView);
-        wv.loadUrl("file:///android_asset/Rac016.html");
+        Bundle bundle = getIntent().getExtras();
+        String documentName = bundle.getString(this.getString(R.string.poem_filename_key));
+        wv.loadUrl("file:///android_asset/"+documentName);
     }
 
     @Override
