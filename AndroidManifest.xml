@@ -21,6 +21,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".PoemActivity"></activity>
+        <activity android:name=".SplashScreenActivity"></activity>
     </application>
 
 </manifest>
